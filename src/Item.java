@@ -10,4 +10,12 @@ public class Item {
 		this.itemName = itemName;
 		itemQuantity = 0;
 	}
+	
+	public String getItemName() {
+		return itemName;
+	}
+	
+	public int getQuantity() {
+		return itemQuantity;
+	}
 }

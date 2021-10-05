@@ -28,4 +28,47 @@ public class Player {
 	}
 	
 	
+	public String getFirstName() {
+		return firstName;
+	}
+	
+	public String getLastName() {
+		return lastName;
+	}
+	
+	public int getHP() {
+		return health;
+	}
+	
+	public int getStrength() {
+		return strength;
+	}
+	
+	public int getDefense() {
+		return defense;
+	}
+	
+	public int getMagic() {
+		return magic;
+	}
+	
+	public int getMagDef() {
+		return magicDefense;
+	}
+	
+	public int getLuck() {
+		return luck;
+	}
+	
+	public void listInventory() {
+		for(Item i : inventory) {
+			System.out.println(i);
+		}
+	}
+	
+	public void listGear() {
+		for(int i = 0; i < gear.length; i++) {
+			System.out.println(gear[i]);
+		}
+	}
 }
