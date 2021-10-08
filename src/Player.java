@@ -71,4 +71,30 @@ public class Player {
 			System.out.println(gear[i]);
 		}
 	}
+	
+	public void addHP(int healthToAdd) {
+		health += healthToAdd;
+	}
+	
+	public void addStrength(int strToAdd) {
+		strength += strToAdd;
+	}
+	
+	public void addDefense(int defToAdd) {
+		defense += defToAdd;
+	}
+	
+	public void addMagic(int magToAdd) {
+		magic += magToAdd;
+	}
+	
+	public void addMagDef(int magDefToAdd) {
+		magicDefense += magDefToAdd;
+	}
+	
+	public void addLuck(int luckToAdd) {
+		luck += luckToAdd;
+	}
+	
+	
 }
