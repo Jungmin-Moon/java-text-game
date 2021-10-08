@@ -22,5 +22,33 @@ public class Weapon extends Item{
 		this.rarity = rarity;
 	}
 	
+	public String getType() {
+		return wepType;
+	}
+	
+	public int getMeleeAtk() {
+		return wepMeleeAtk;
+	}
+	
+	public int getMagAtk() {
+		return wepMagAtk;
+	}
+	
+	public int getLevel() {
+		return level;
+	}
+	
+	public int getGoldSellPrice() {
+		return goldSellPrice;
+	}
+	
+	public int getGoldBuyPrice() {
+		return goldBuyPrice;
+	}
+	
+	public String getRarity() {
+		return rarity;
+	}
+	
 	
 }
