@@ -9,6 +9,8 @@ public class Armor extends Item{
 	private int goldBuyPrice;
 	private String rarity;
 	
+	private final String[] raritiesArmor = {"Common", "Rare", "Super Rare", "Ultra Rare"};
+	
 	public Armor(String armorName, String armorType, int melDef, int magDef, int goldSellP, int goldBuyP, 
 				String rarity) {
 		super(armorName);

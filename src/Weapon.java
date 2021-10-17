@@ -9,6 +9,8 @@ public class Weapon extends Item{
 	private int goldBuyPrice;
 	private String rarity; //depending on rarity give bonus stats to main stats same with armor
 	
+	private final String[] raritiesWep = {"Common", "Rare", "Super Rare", "Ultra Rare"};
+	
 	
 	public Weapon(String wepType, String wepName, int wepMeleeAtk, int wepMagAtk, int level, int goldSellP, 
 					int goldBuyP, String rarity) {
@@ -49,6 +51,9 @@ public class Weapon extends Item{
 	public String getRarity() {
 		return rarity;
 	}
+	
+	//adjust rarity bonus for sword/shield, two-handed, spear, daggers, staff
+	//rarity would be common, rare, super rare and ultra rare
 	
 	
 }

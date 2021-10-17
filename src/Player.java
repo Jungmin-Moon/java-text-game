@@ -16,7 +16,7 @@ public class Player {
 	
 	public Player(String fName, String lName) {
 		firstName = fName;
-		lName = lastName;
+		lastName = lName;
 		health = 10;
 		strength = 4;
 		defense = 4;
