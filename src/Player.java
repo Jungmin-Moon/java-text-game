@@ -7,7 +7,6 @@ public class Player {
 	private int strength;
 	private int defense;
 	private int magic;
-	private int magicDefense;
 	private int luck;
 	
 	private List<Item> inventory;
@@ -21,7 +20,6 @@ public class Player {
 		strength = 4;
 		defense = 4;
 		magic = 4;
-		magicDefense = 4;
 		luck = 4;
 		inventory = new ArrayList<>();
 		gear = new Item[8];
@@ -52,9 +50,6 @@ public class Player {
 		return magic;
 	}
 	
-	public int getMagDef() {
-		return magicDefense;
-	}
 	
 	public int getLuck() {
 		return luck;
@@ -86,10 +81,6 @@ public class Player {
 	
 	public void addMagic(int magToAdd) {
 		magic += magToAdd;
-	}
-	
-	public void addMagDef(int magDefToAdd) {
-		magicDefense += magDefToAdd;
 	}
 	
 	public void addLuck(int luckToAdd) {
