@@ -110,7 +110,9 @@ public class Player {
 		level++;
 	}
 	
-	
+	public void setJob(String newJob) {
+		currentJob = newJob;
+	}
 	
 	
 }
