@@ -8,6 +8,10 @@ public class Player {
 	private int defense;
 	private int magic;
 	private int luck;
+	private String currentJob;
+	private int level;
+	private int currentEXP;
+	private int neededEXP;
 	
 	private List<Item> inventory;
 	
@@ -23,6 +27,9 @@ public class Player {
 		luck = 4;
 		inventory = new ArrayList<>();
 		gear = new Item[8];
+		level = 1;
+		currentEXP = 0;
+		neededEXP = 100;
 	}
 	
 	
@@ -53,6 +60,18 @@ public class Player {
 	
 	public int getLuck() {
 		return luck;
+	}
+	
+	public int getLevel() {
+		return level;
+	}
+	
+	public int getCurEXP() {
+		return currentEXP;
+	}
+	
+	public int getNeededEXP() {
+		return neededEXP;
 	}
 	
 	public void listInventory() {
@@ -86,6 +105,12 @@ public class Player {
 	public void addLuck(int luckToAdd) {
 		luck += luckToAdd;
 	}
+	
+	public void addLevel() {
+		level++;
+	}
+	
+	
 	
 	
 }
