@@ -2,12 +2,12 @@ import java.util.Random;
 
 public class Warrior implements Job{
 	
-	private int hpAdd;
-	private int strengthAdd;
-	private int defenseAdd;
-	private int luckAdd;
-	private int magicAdd;
-	private String name;
+	private static int hpAdd;
+	private static int strengthAdd;
+	private static int defenseAdd;
+	private static int luckAdd;
+	private static int magicAdd;
+	private static String name;
 	
 	Warrior () {
 		hpAdd = 6;
