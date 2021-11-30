@@ -32,11 +32,11 @@ public class Mage implements Job{
 	@Override
 	public void levelUpStatAdd(Player player) {
 		if(player.getLevel() < 51) {
-			player.addHP(6);
-			player.addStrength(4);
-			player.addDefense(6);
-			player.addMagic(1);
-			player.addLuck(2);
+			player.addHP(3);
+			player.addStrength(1);
+			player.addDefense(4);
+			player.addMagic(6);
+			player.addLuck(3);
 		} else {
 			player.addHP(randomLevelUpStats(5, 3));
 			player.addStrength(randomLevelUpStats(2, 0));
