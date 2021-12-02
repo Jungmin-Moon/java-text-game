@@ -1,7 +1,7 @@
 import java.util.Random;
 
-public class Bronze_Sword extends Weapon{
-	
+public class Iron_Sword extends Weapon{
+
 	private String rarity;
 	private int meleeAtk;
 	private int magicAtk;
@@ -10,18 +10,19 @@ public class Bronze_Sword extends Weapon{
 	private int chanceBlock;
 	private int accuracy;
 	
-
-	public Bronze_Sword(String itemName) {
+	
+	public Iron_Sword(String itemName) {
 		super(itemName);
 		rarity = "common";
-		meleeAtk = 2;
+		meleeAtk = 5;
 		magicAtk = 0;
-		goldSellPrice = 2;
-		goldBuyPrice = 5;
-		chanceBlock = 10;
+		goldSellPrice = 5;
+		goldBuyPrice = 8;
+		chanceBlock = 12;
 		accuracy = 50;
+		
 	}
-	
+
 	public String getRarity() {
 		return rarity;
 	}
@@ -29,17 +30,17 @@ public class Bronze_Sword extends Weapon{
 	public int getMeleeAtk() {
 		return meleeAtk;
 	}
-	
+
 	public int getMagicAtk() {
 		return magicAtk;
 	}
-	
-	public int getSellPrice() {
-		return goldSellPrice;
-	}
-	
-	public int getBuyPrice() {
+
+	public int getGoldBuyPrice() {
 		return goldBuyPrice;
+	}
+
+	public int getGoldSellPrice() {
+		return goldSellPrice;
 	}
 	
 	public int getChanceBlock() {
@@ -50,21 +51,14 @@ public class Bronze_Sword extends Weapon{
 		return accuracy;
 	}
 	
-	
-	
-	/*
-	 * rare for weapons like swords, spears, axes and maces should get set stat ups at each tier 
-	 * being rare, epic, gold and legendary
-	 * 
-	 */
 	public void rarityChance() {
 		int chance = rarityUpgradeNum();
 		if(chance == 1 || chance == 3 || chance == 5) {
 			rarity = "common";
 		} else {
 			rarity = "rare";
-			meleeAtk += 1;
-			goldSellPrice += 2;
+			meleeAtk += 2;
+			goldSellPrice += 3;
 			chanceBlock += 5;
 			accuracy += 5;
 		}
