@@ -1,6 +1,10 @@
+package swords;
 import java.util.Random;
 
-public class Silver_Sword {
+import main_game.Weapon;
+
+public class Silver_Sword extends Weapon{
+	
 	private String rarity;
 	private int meleeAtk;
 	private int magicAtk;
@@ -8,5 +12,11 @@ public class Silver_Sword {
 	private int goldBuyPrice;
 	private int chanceBlock;
 	private int accuracy;
+	
+	public Silver_Sword(String itemName) {
+		super(itemName);
+	
+	}
+
 	
 }

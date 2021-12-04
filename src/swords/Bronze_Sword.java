@@ -1,4 +1,7 @@
+package swords;
 import java.util.Random;
+
+import main_game.Weapon;
 
 public class Bronze_Sword extends Weapon{
 	

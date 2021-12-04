@@ -1,3 +1,4 @@
+package main_game;
 import java.util.Random;
 
 public class Thief implements Job{
