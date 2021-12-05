@@ -17,10 +17,10 @@ public class Iron_Sword extends Weapon{
 	public Iron_Sword(String itemName) {
 		super(itemName);
 		rarity = "common";
-		meleeAtk = 5;
+		meleeAtk = 10;
 		magicAtk = 0;
-		goldSellPrice = 5;
-		goldBuyPrice = 8;
+		goldSellPrice = 10;
+		goldBuyPrice = 15;
 		chanceBlock = 12;
 		accuracy = 50;
 		

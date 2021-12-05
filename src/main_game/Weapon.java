@@ -12,7 +12,7 @@ public class Weapon extends Item{
 	
 	//then gold also only up to gold 
 	//then fire and ice swords and earth these will go to epic 
-	//then silver and epic 
-	//then iron rare 
+	//then silver starts from epic 
+	//then iron rare
 	//then bronze and rare 
 }

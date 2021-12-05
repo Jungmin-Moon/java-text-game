@@ -17,10 +17,10 @@ public class Bronze_Sword extends Weapon{
 	public Bronze_Sword(String itemName) {
 		super(itemName);
 		rarity = "common";
-		meleeAtk = 2;
+		meleeAtk = 5;
 		magicAtk = 0;
-		goldSellPrice = 2;
-		goldBuyPrice = 5;
+		goldSellPrice = 5;
+		goldBuyPrice = 8;
 		chanceBlock = 10;
 		accuracy = 50;
 	}
