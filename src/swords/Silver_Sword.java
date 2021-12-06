@@ -58,9 +58,24 @@ public class Silver_Sword extends Weapon{
 	}
 	
 	//10 and 9 should be epic 
-	//1,2,3,4,5 should be rare
-	//6,7,8 should be epic
+	//1,2,3, should be rare
+	//4,5,6,7,8 should be epic
 	public void rarityChance() {
-		
+		int chance = rarityUpgradeNum();
+		if(chance == 1 || chance == 2 || chance == 3) {
+			rarity = "common";
+		} else if (chance == 4 || chance == 5 || chance == 6 || chance == 7 || chance == 8) {
+			rarity = "rare";
+			meleeAtk += 5;
+			goldSellPrice += 5;
+			chanceBlock += 6;
+			accuracy += 6;
+		} else {
+			rarity = "epic";
+			meleeAtk += 8;
+			goldSellPrice += 8;
+			chanceBlock += 6;
+			accuracy += 6;
+		}
 	}
 }
