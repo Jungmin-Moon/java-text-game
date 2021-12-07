@@ -15,7 +15,13 @@ public class Ice_Sword extends Weapon{
 	
 	public Ice_Sword(String itemName) {
 		super(itemName);
-		// TODO Auto-generated constructor stub
+		meleeAtk = 25;
+		magicAtk = 0;
+		goldSellPrice = 20;
+		goldBuyPrice = 40;
+		chanceBlock = 20;
+		accuracy = 65;
+		rarity = "common";
 	}
 	
 	public String getRarity() {

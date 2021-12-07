@@ -15,7 +15,13 @@ public class Fire_Sword extends Weapon{
 	
 	public Fire_Sword(String itemName) {
 		super(itemName);
-		
+		meleeAtk = 25;
+		magicAtk = 0;
+		goldSellPrice = 20;
+		goldBuyPrice = 40;
+		chanceBlock = 20;
+		accuracy = 65;
+		rarity = "common";
 	}
 	
 	public String getRarity() {
