@@ -6,6 +6,7 @@ import main_game.Weapon;
 public class Bronze_Sword extends Weapon{
 	
 	private String rarity;
+	private String name = "Bronze Sword";
 	private int meleeAtk;
 	private int magicAtk;
 	private int goldSellPrice;
@@ -14,8 +15,7 @@ public class Bronze_Sword extends Weapon{
 	private int accuracy;
 	
 
-	public Bronze_Sword(String itemName) {
-		super(itemName);
+	public Bronze_Sword() {
 		rarity = "common";
 		meleeAtk = 5;
 		magicAtk = 0;
@@ -23,6 +23,10 @@ public class Bronze_Sword extends Weapon{
 		goldBuyPrice = 8;
 		chanceBlock = 10;
 		accuracy = 50;
+	}
+	
+	public String getName() {
+		return name;
 	}
 	
 	public String getRarity() {

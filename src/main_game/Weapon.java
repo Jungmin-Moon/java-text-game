@@ -1,8 +1,8 @@
 package main_game;
 public class Weapon extends Item{
 
-	public Weapon(String itemName) {
-		super(itemName);
+	public Weapon() {
+		
 	}
 	
 	

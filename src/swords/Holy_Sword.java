@@ -6,6 +6,7 @@ import main_game.Weapon;
 public class Holy_Sword extends Weapon{
 	
 	private String rarity;
+	private String name = "Holy Sword";
 	private int meleeAtk;
 	private int magicAtk;
 	private int goldSellPrice;
@@ -14,9 +15,18 @@ public class Holy_Sword extends Weapon{
 	private int accuracy;
 	
 
-	public Holy_Sword(String itemName) {
-		super(itemName);
-		// TODO Auto-generated constructor stub
+	public Holy_Sword() {
+		meleeAtk = 40;
+		magicAtk = 0;
+		goldSellPrice = 40;
+		goldBuyPrice = 70;
+		chanceBlock = 50;
+		accuracy = 70;
+		rarity = "common";
+	}
+	
+	public String getName() {
+		return name;
 	}
 	
 	public String getRarity() {
@@ -52,5 +62,29 @@ public class Holy_Sword extends Weapon{
 		return random.nextInt(10 - 1) + 1;
 	}
 	
+	public void rarityChance() {
+		int chance = rarityUpgradeNum();
+		if(chance == 1 || chance == 2 || chance == 3 || chance == 4 || chance == 5 || chance == 6 || chance == 7) {
+			rarity = "common";
+		} else if (chance == 8 || chance == 9 || chance == 10 || chance == 11) {
+			rarity = "rare";
+			meleeAtk += 5;
+			goldSellPrice += 5;
+			chanceBlock += 6;
+			accuracy += 6;
+		} else if (chance == 12 || chance == 13 || chance == 14) {
+			rarity = "epic";
+			meleeAtk += 8;
+			goldSellPrice += 8;
+			chanceBlock += 6;
+			accuracy += 8;
+		} else {
+			rarity = "gold";
+			meleeAtk += 12;
+			goldSellPrice += 12;
+			chanceBlock += 10;
+			accuracy += 10;
+		}
+	}
 
 }

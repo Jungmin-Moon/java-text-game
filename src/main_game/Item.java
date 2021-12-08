@@ -3,18 +3,17 @@ package main_game;
 public class Item {
 	
 	
-	private String itemName;
 	private int itemQuantity;
 	
 	
-	public Item(String itemName) {
-		this.itemName = itemName;
+	public Item() {
 		itemQuantity = 0;
 	}
 	
+	/*
 	public String getItemName() {
 		return itemName;
-	}
+	} */
 	
 	public int getQuantity() {
 		return itemQuantity;

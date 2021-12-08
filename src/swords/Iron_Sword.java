@@ -6,6 +6,7 @@ import main_game.Weapon;
 public class Iron_Sword extends Weapon{
 
 	private String rarity;
+	private String name = "Iron Sword";
 	private int meleeAtk;
 	private int magicAtk;
 	private int goldSellPrice;
@@ -14,8 +15,7 @@ public class Iron_Sword extends Weapon{
 	private int accuracy;
 	
 	
-	public Iron_Sword(String itemName) {
-		super(itemName);
+	public Iron_Sword() {
 		rarity = "common";
 		meleeAtk = 10;
 		magicAtk = 0;
@@ -24,6 +24,10 @@ public class Iron_Sword extends Weapon{
 		chanceBlock = 12;
 		accuracy = 50;
 		
+	}
+	
+	public String getName() {
+		return name;
 	}
 
 	public String getRarity() {

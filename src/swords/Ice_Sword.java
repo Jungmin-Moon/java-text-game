@@ -6,6 +6,7 @@ import main_game.Weapon;
 public class Ice_Sword extends Weapon{
 	
 	private String rarity;
+	private String name = "Ice Sword";
 	private int meleeAtk;
 	private int magicAtk;
 	private int goldSellPrice;
@@ -13,8 +14,7 @@ public class Ice_Sword extends Weapon{
 	private int chanceBlock;
 	private int accuracy;
 	
-	public Ice_Sword(String itemName) {
-		super(itemName);
+	public Ice_Sword() {
 		meleeAtk = 25;
 		magicAtk = 0;
 		goldSellPrice = 20;
@@ -22,6 +22,10 @@ public class Ice_Sword extends Weapon{
 		chanceBlock = 20;
 		accuracy = 65;
 		rarity = "common";
+	}
+	
+	public String getName() {
+		return name;
 	}
 	
 	public String getRarity() {
