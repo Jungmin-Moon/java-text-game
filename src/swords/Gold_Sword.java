@@ -74,22 +74,22 @@ public class Gold_Sword extends Weapon {
 			rarity = "common";
 		} else if (chance == 8 || chance == 9 || chance == 10 || chance == 11) {
 			rarity = "rare";
-			meleeAtk += 5;
-			goldSellPrice += 5;
-			chanceBlock += 6;
-			accuracy += 6;
-		} else if (chance == 12 || chance == 13 || chance == 14) {
-			rarity = "epic";
 			meleeAtk += 8;
 			goldSellPrice += 8;
-			chanceBlock += 6;
-			accuracy += 8;
+			chanceBlock += 10;
+			accuracy += 10;
+		} else if (chance == 12 || chance == 13 || chance == 14) {
+			rarity = "epic";
+			meleeAtk += 10;
+			goldSellPrice += 10;
+			chanceBlock += 12;
+			accuracy += 12;
 		} else {
 			rarity = "gold";
 			meleeAtk += 12;
 			goldSellPrice += 12;
-			chanceBlock += 10;
-			accuracy += 10;
+			chanceBlock += 14;
+			accuracy += 14;
 		}
 	}
 }
