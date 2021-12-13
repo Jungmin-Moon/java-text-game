@@ -1,6 +1,8 @@
 package main_game;
 import java.util.*;
 
+import magics.Magic;
+
 public class Player {
 	private String firstName;
 	private String lastName;
@@ -17,6 +19,8 @@ public class Player {
 	private List<Item> inventory;
 	
 	private Item[] gear;
+	
+	private Magic[] magicLearned;
 	
 	public Player(String fName, String lName) {
 		firstName = fName;
