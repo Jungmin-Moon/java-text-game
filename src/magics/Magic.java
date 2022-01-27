@@ -1,5 +1,8 @@
 package magics;
 
+import enemy.Enemy;
+import main_game.Player;
+
 public abstract class Magic {
 	
 	protected int rank;
@@ -17,8 +20,10 @@ public abstract class Magic {
 		strongAgainst = "";
 	}
 	
-	public abstract void addCharges();
+	public abstract void addCharges(Player player);
 	
-	public abstract int calcDmg();
+	public abstract int calcDmg(Enemy enemy, Player player);
+	
+	
 	
 }
