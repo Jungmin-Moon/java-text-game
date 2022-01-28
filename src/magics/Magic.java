@@ -12,12 +12,12 @@ public abstract class Magic {
 	protected String strongAgainst;
 	
 	
-	Magic() {
-		rank = 0;
-		charges = 0;
-		name = "";
-		dmg = 0;
-		strongAgainst = "";
+	Magic(int rank, int charges, String name, int dmg, String strongAgainst) {
+		this.rank = rank;
+		this.charges = charges;
+		this.name = name;
+		this.dmg = dmg;
+		this.strongAgainst = strongAgainst;
 	}
 	
 	public abstract void addCharges(Player player);
