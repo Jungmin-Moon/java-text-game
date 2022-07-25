@@ -1,17 +1,49 @@
 package playerInfo;
 
 public class Player {
+	
+	//all default values will be done prior to creation of character
 	String playerName;
-	int baseStrength = 5;
-	int baseMagic = 5;
-	int baseLuck = 5;
-	int baseDef = 5;
-	int baseHP = 20;
-	int baseAgility = 5;
+	int playerStrength = 5;
+	int playerMagic = 5;
+	int playerLuck = 5;
+	int playerDef = 5;
+	int playerHP = 20;
+	int playerAgility = 5;
 	
 	
 	Player(String name) {
 		playerName = name;
+	}
+	
+	
+	//setters and getters for player stats
+	public String getPlayerName() {
+		return playerName;
+	}
+	
+	public int getStrength() {
+		return playerStrength;
+	}
+	
+	public int getMagic() {
+		return playerMagic;
+	}
+	
+	public int getLuck() {
+		return playerLuck;
+	}
+	
+	public int getDef() {
+		return playerDef;
+	}
+	
+	public int getHP() {
+		return playerHP;
+	}
+	
+	public int getAgility() {
+		return playerAgility;
 	}
 	
 	
