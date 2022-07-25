@@ -47,4 +47,32 @@ public class Player {
 	}
 	
 	
+	public void setPlayerName(String newName) {
+		playerName = newName;
+	}
+	
+	public void addStrength(int addStrength) {
+		playerStrength += addStrength;
+	}
+	
+	public void addMagic(int addMagic) {
+		playerMagic += addMagic;
+	}
+	
+	public void addLuck(int addLuck) {
+		playerLuck += addLuck;
+	}
+	
+	public void addDef(int addDef) {
+		playerDef += addDef;
+	}
+	
+	public void addHP(int addHP) {
+		playerHP += addHP;
+	}
+	
+	public void addAgility(int addAgility) {
+		playerAgility += addAgility;
+	}
+	
 }
