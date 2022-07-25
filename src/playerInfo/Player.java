@@ -1,5 +1,9 @@
 package playerInfo;
 
+
+	//Needs a way to track inventory
+	//Needs way to track equipped and work with inventory
+	
 public class Player {
 	
 	//all default values will be done prior to creation of character
