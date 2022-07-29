@@ -4,6 +4,8 @@ package gameItems;
  * Creation of items package and the item class
  * Weapons armor etc will need to extend off base item which will be simple and have their own properties
  * consumables will also need to extend and branch off into their own trees with their own properties as well
+ * 
+ * Question becomes do i create a database of items first and then create the classes or instead of classes just use the database 
  */
 public class Item {
 	//Every item will always have some sort of gold value and a name
