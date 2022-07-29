@@ -14,10 +14,12 @@ public class Player {
 	int playerDef = 5;
 	int playerHP = 20;
 	int playerAgility = 5;
+	Inventory playerInventory;
 	
 	
 	Player(String name) {
 		playerName = name;
+		playerInventory = new Inventory();
 	}
 	
 	
